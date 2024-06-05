@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor-de-Moédas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https: //fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img  class="gif" src="./accents/logo.gif" alt="logo-gif">
+    <main>
+        <label class="converter">
+            Converter <b>De</b>
+            <select>
+                <option>R$ Real brasileiro</option>
+                <option>US$ Dolar</option>
+                <option>€ Euro</option>
+
+            </select>
+        </label class="para">
+
+        <label>
+            Converter <b>Para</b>
+            <select onchange="troquei()" class="convertido">
+                <option value="real">U$ Real brasileiro</option>
+                <option value="dolar">US$ Dolar</option>
+                <option value="euro">€ Euro</option>
+            </select>
+        </label>
+
+        <label class="valor" for="input">
+            <b>Valor</b>
+            <input type="number" id="input" placeholder="Digite o valor">
+        </label>
+
+        <button onclick="cliqueiNoBotao()">Converter</button>
+
+        <section>
+            <div class="div-de-cima">
+                <img src="./accents/brasil 2.png" alt="logo-Brasil">
+                <p class="moeda">Real</p>
+                <p class="valor-moeda real">R$ 0.0</p>
+            </div>
+
+            <img class="seta-img" src="./accents/Vector.png" alt="logo-vector">
+
+            <div class="div-de-baixo">
+                <img class="img-eua" src="./accents/estados-unidos (1) 1.png" alt="logo-EUA">
+                <p class="moeda moeda2">Dólar</p>
+                <p class="valor-moeda dolar">U$ 0.0</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+<script src="./script.js"></script>
+</html>

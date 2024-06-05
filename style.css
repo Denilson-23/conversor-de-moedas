@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Changa", sans-serif;
+    outline: none;
+
+}
+
+body {
+  
+    background-color: #895af7;
+
+}
+
+.gif {
+    width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+main {
+    width: 375px;
+    background-color: #F4F4F4;
+    margin: 0 auto 40px;
+    border-radius: 20px;
+    display: block;
+    padding: 44px 24px 23px;
+  
+}
+
+label {
+    color: #777777;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+select {
+    background-color: #ffffff;
+    border: 1px solid #bbbbbb;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #555555;
+}
+
+input {
+    height: 48px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #555555;
+    padding-left: 18px;
+
+}
+
+button {
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #772FD3;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    background-color: #2630e9;
+}
+
+section {
+  
+    border-radius: 20px;
+    border: 1px solid #772FD3;
+    margin-top: 24px;
+    padding: 12px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seta-img{
+    margin: 14px 0;
+}
+.div-de-cima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    
+}
+.div-de-baixo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.moeda{
+    
+font-size: 20px;
+font-weight: 700;
+line-height: 18px;
+text-align: left;
+
+
+}
+.valor-moeda{
+    
+font-size: 28px;
+font-weight: 700;
+line-height: 18px;
+text-align: left;
+color: #555555;
+
+
+
+}
+
+@media (max-width :900px) {
+    
+    
+}
