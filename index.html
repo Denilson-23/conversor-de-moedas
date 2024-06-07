@@ -14,12 +14,13 @@
 <body>
     <img  class="gif" src="./accents/logo.gif" alt="logo-gif">
     <main>
-        <label class="converter">
+        <label >
             Converter <b>De</b>
-            <select>
-                <option>R$ Real brasileiro</option>
-                <option>US$ Dolar</option>
-                <option>€ Euro</option>
+            <select onchange="troquei2()" class="converter">
+                <option value="moeda" > 	&#x1F4B8 Selecione á Moeda</option>
+                <option value="real">R$ Real brasileiro</option>
+                <option value="dolar">US$ Dolar</option>
+                <option value="euro">€ Euro</option>
 
             </select>
         </label class="para">
@@ -27,6 +28,7 @@
         <label>
             Converter <b>Para</b>
             <select onchange="troquei()" class="convertido">
+                <option value="moeda" > &#x1F4B8 Selecione á Moeda </option>
                 <option value="real">U$ Real brasileiro</option>
                 <option value="dolar">US$ Dolar</option>
                 <option value="euro">€ Euro</option>
@@ -35,24 +37,24 @@
 
         <label class="valor" for="input">
             <b>Valor</b>
-            <input type="number" id="input" placeholder="Digite o valor">
+            <input type="number" autocomplete="off" id="input" placeholder="Digite o valor">
         </label>
 
         <button onclick="cliqueiNoBotao()">Converter</button>
 
         <section>
             <div class="div-de-cima">
-                <img src="./accents/brasil 2.png" alt="logo-Brasil">
-                <p class="moeda">Real</p>
-                <p class="valor-moeda real">R$ 0.0</p>
+                <img class="img-bra img-moeda" src="./accents/imagen_moeda-removebg-preview.png" alt="logo-moeda">
+                <p class="moeda moeda3">Moéda á Converter</p>
+                <p class="valor-moeda real"> 0.0</p>
             </div>
 
             <img class="seta-img" src="./accents/Vector.png" alt="logo-vector">
 
             <div class="div-de-baixo">
-                <img class="img-eua" src="./accents/estados-unidos (1) 1.png" alt="logo-EUA">
-                <p class="moeda moeda2">Dólar</p>
-                <p class="valor-moeda dolar">U$ 0.0</p>
+                <img class="img-eua img-moeda" src="./accents/imagen_moeda-removebg-preview.png" alt="logo-moeda">
+                <p class="moeda moeda2">Moéda Convertida</p>
+                <p class="valor-moeda dolar"> 0.0</p>
             </div>
         </section>
 
