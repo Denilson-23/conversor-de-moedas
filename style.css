@@ -4,13 +4,10 @@
     box-sizing: border-box;
     font-family: "Changa", sans-serif;
     outline: none;
-
 }
 
 body {
-  
     background-color: #895af7;
-
 }
 
 .gif {
@@ -26,14 +23,12 @@ main {
     border-radius: 20px;
     display: block;
     padding: 44px 24px 23px;
-  
 }
 
 label {
     color: #777777;
     font-size: 20px;
     font-weight: 400;
-
 }
 
 select {
@@ -56,7 +51,6 @@ input {
     font-size: 20px;
     color: #555555;
     padding-left: 18px;
-
 }
 
 button {
@@ -81,54 +75,119 @@ button:active {
 }
 
 section {
-  
     border-radius: 20px;
     border: 1px solid #772FD3;
     margin-top: 24px;
     padding: 12px;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.seta-img{
+
+.seta-img {
     margin: 14px 0;
 }
-.div-de-cima{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    
-}
-.div-de-baixo{
+
+.div-de-cima, .div-de-baixo {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
 }
-.moeda{
-    
-font-size: 20px;
-font-weight: 700;
-line-height: 18px;
-text-align: left;
 
-
-}
-.valor-moeda{
-    
-font-size: 28px;
-font-weight: 700;
-line-height: 18px;
-text-align: left;
-color: #555555;
-
-
-
+.moeda {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
 }
 
-@media (max-width :900px) {
+.valor-moeda {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: #555555;
+}
+
+.img-moeda {
+    width: 60px;
+    height: 60px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gif {
+        width: 250px;
+    }
     
+    main {
+        
+        padding: 36px 16px 20px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    select, input {
+        height: 44px;
+        font-size: 18px;
+    }
+
+    button {
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .moeda {
+        font-size: 18px;
+    }
+
+    .valor-moeda {
+        font-size: 24px;
+    }
+
+    .img-moeda {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gif {
+        width: 200px;
+    }
     
+    main {
+        padding: 28px 12px 16px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    select, input {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    button {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .moeda {
+        font-size: 24px;
+        margin-bottom: 9px;
+    }
+
+    .valor-moeda {
+        font-size: 36px;
+    }
+
+    .img-moeda {
+        width: 70px;
+        height: 70px;
+    }
 }
